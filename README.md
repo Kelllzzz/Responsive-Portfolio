@@ -17,4 +17,3 @@ To use this website,the following image shows the web application's appearance a
 ## Credits
 
 N/A
-
