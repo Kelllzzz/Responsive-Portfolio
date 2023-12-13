@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 30px;
+  background-color: turquoise;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  width: 600px;
+  height: 450px;
+}
+
+a {
+  color: turquoise;
+  font-size: 24px;
+}
+
+l1 {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: #13293d;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  color: #13293d;
+}
+
+nav>ul>li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.hero-banner {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  font-size: 20px;
+
+}
+
+.hero-banner h2 {
+  background-color: turquoise;
+  margin-bottom: 10px;
+  margin-left: 900px;
+  width: 25%;
+  height: 20%;
+}
+
+.hero-banner img {
+  height: 10%;
+  width: 10%;
+  margin-bottom: 10px;
+  margin-left: 5%;
+}
+.page-section {
+  display: flex;
+  margin-bottom: 50px;
+
+}
+
+.page-section>div {
+  flex: 0 0 75%;
+
+}
+
+.page-section>h2 {
+  flex: 0 0 25%;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-gap: 10px;
+}
+
+.grid-item {
+  border: 10px solid turquoise;
+}
+
+
+.big-box {
+  grid-column: span 2;
+  background-image: url("../images/02-portfolio-4.jpg");
+  height: 400px;
+  background-size: cover;
+}
+
+.title {
+  border-right: 5px solid darkslategray;
+  font-weight: bolder;
+  font-size: 50px;
+  margin-right: 50px;
+}
+
+.spectrum {
+  background-image: url("../images/02-portfolio-1.jpg");
+  background-size: cover;
+}
+
+.computer {
+  background-image: url("../images/02-portfolio-2.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+.car {
+  background-image: url("../images/02-portfolio-3.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+.web {
+  background-image: url("../images/02-run-buddy.jpg");
+  background-size: cover;
+  height: 300px;
+
+}
+
+.web a,
+.car a,
+.computer a,
+.spectrum a,
+.big-box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  background-color: turquoise;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  main {
+    max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-section {
+    flex-direction: column;
+    padding: 10%;
+  }
+
+  .title {
+    border-bottom: 10px solid turquoise;
+    border-right: none;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+
+  }
+}
